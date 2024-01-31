@@ -1,39 +1,31 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'satoshi';
+  src: url('Satoshi-Variable.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.app {
+  font-family: 'satoshi';
+  background: #0A0A15;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+
+.app__body {
+  display: flex;
+  /* Center children horizontally */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* Center children vertically */
+  margin: 5px;
+  max-width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.login-container {
+  min-height: 100vh;
+  height: fit-content;
 }
